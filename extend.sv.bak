@@ -1,3 +1,0 @@
-module extend #(parameter XLEN = 32) ();
-
-endmodule

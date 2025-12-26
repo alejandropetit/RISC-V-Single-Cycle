@@ -1,9 +1,9 @@
-module extend (input logic [1:0] i, input logic [19:0] instr, output logic [31:0] ext);
+module extend (input logic [1:0] i, input logic [19:0] Instr, output logic [31:0] Ext);
 	always_comb
 		case(i)
-			2'b00: ext = {{20{instr[31]}},instr[19:8]};
-			2'b01: ext = {{12{instr[31]}},instr};	
-			2'b10: ext = {28'b0,instr[12:8]};
-			default: ext = 32'bx;
+			2'b00: Ext = {{20{Instr[19]}},Instr[19:8]};
+			2'b01: Ext = {{12{Instr[19]}},Instr};	
+			2'b10: Ext = {28'b0,Instr[12:8]};
+			default: Ext = 32'bx;
 		endcase
 endmodule

@@ -1,0 +1,3 @@
+module mux2 #(parameter XLEN = 32)(input logic s, input logic a, b, output logic y);
+
+endmodule

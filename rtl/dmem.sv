@@ -5,7 +5,7 @@ logic [31:0] word,Aux;
 logic [3:0] be;
 
 initial
-	$readmemh("C:/Users/josea/RISC-V/RISC-V-Single-Cycle/dmem.dat",RAM);
+	$readmemh("C:/Users/josea/RISC-V/RISC-V-Single-Cycle/mem/dmem.dat",RAM);
 
 
 
